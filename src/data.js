@@ -10,7 +10,7 @@ const data = [
     {
         id:3, 
         title:"The Crazy Programmer",
-        content: "JavaScript is awesome, learn it to build awesome websites"
+        content: "JavaScript is awesome, learn it to build awesome websites."
     }
 ];
 

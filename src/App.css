@@ -46,7 +46,7 @@
  position: relative;
  top:10px;
  box-shadow: 1px 1px 5px 1px rgb(75, 94, 204);
- margin: 50px 50px;
+ margin: 50px 270px;
 }
 
 .blog-container-dark{
@@ -56,6 +56,6 @@
     justify-content: center;
     position: relative;
     top:10px;
-    box-shadow: 1px 1px 5px 1px rgb(126, 43, 94);
-    margin: 50px 50px;
+    box-shadow: 2px 2px 5px 1px rgb(126, 43, 94);
+    margin: 50px 270px;
 }
