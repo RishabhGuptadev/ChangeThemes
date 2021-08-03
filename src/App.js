@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {useState, useEffect} from 'react'
+import ContentContainer from './ContentContainer';
+import data from './data';
 function App() {
+  const [mode, setMode] = useState("Light-Theme");
+  
+  useEffect(() => {
+    document.documentElement.className =mode;
+  },[mode]);
+  const changeTheMode = () =>{
+    if(mode === "Light-Theme"){
+      setMode("Dark-Theme");
+    }
+    else {
+      setMode("Light-Theme");
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className ="Header">
+    <h1>The Coding Blogs</h1>
+    <button className={mode==="Light-Theme"? "btn-light" : "btn-dark"} onClick={changeTheMode}>Switched: {mode}</button>
+    </div>  
+      
+      {data.map((blogData)=>{
+        return <ContentContainer key ={blogData.id} mode={mode} {...blogData}/>
+      })}
     </div>
   );
 }
