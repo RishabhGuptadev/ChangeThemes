@@ -15,9 +15,12 @@ code {
 
 .Dark-Theme{
   color:pink;
-  background-color: black;
+  background-image: linear-gradient(black, rgba(12, 5, 10, 0.973));
+  height:100vh;
 }
 
 .Light-Theme {
   color:rgb(82, 82, 160);
+  background-image: linear-gradient(rgb(235, 254, 255),white);
+  height: 100vh;
 }

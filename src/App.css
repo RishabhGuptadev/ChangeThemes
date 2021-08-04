@@ -30,12 +30,12 @@
     border-radius: 25px;
     padding:15px 20px;
     background: transparent;
-    border:2px solid pink;
+    border:2px solid rgb(126, 43, 94);
 }
 
 .Header .btn-dark:hover{
-    background:pink;
-    color:black;
+    background:rgb(156, 52, 116);
+  
 }
 
 .blog-container-light{
@@ -47,6 +47,7 @@
  top:10px;
  box-shadow: 1px 1px 5px 1px rgb(75, 94, 204);
  margin: 50px 270px;
+ font-family: 'Merriweather', serif;
 }
 
 .blog-container-dark{
@@ -58,4 +59,5 @@
     top:10px;
     box-shadow: 2px 2px 5px 1px rgb(126, 43, 94);
     margin: 50px 270px;
+    font-family: 'Merriweather', serif;
 }
